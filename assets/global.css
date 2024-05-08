@@ -1,6 +1,8 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset CSS */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -10,8 +12,8 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
     font-style: normal;
     box-sizing: border-box;
 }
@@ -42,7 +44,7 @@ header {
 
 #logo a {
     text-decoration: none;
-    color: #333;
+    color: #FFA500;
     font-size: 1.3em;
 }
 
@@ -103,13 +105,16 @@ header {
     margin-right: 10px;
 }
 
+.container{
+    display: flex;
+}
+
 /* Sidebar Container*/
 .containerNav {
     max-width: 17vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
 }
 
 /* Navegação Sidebar*/
@@ -124,8 +129,8 @@ header {
 }
 
 .nav ul {
-
     width: 10vw;
+    font-size: 14px;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -134,20 +139,39 @@ header {
 .nav ul li {
     display: flex;
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
     transition: background-color 0.3s ease;
 }
 
 .nav ul li:hover {
     background-color: #e3e7eb;
+    border-bottom:solid 1px #FFA500;
 }
 
 .nav ul li a {
-    display: block; 
+    display: block;
+    padding: 20px; 
     text-decoration: none;
     color: #333;
     font-size: 1em;
-    font-weight: bold;
+}
+
+
+.nav .titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.nav .titulo img{
+    width: 25px;
+    height: 25px;
+}
+
+.conteudo{
+    width: 100%;
+    padding: 20px;
 }
