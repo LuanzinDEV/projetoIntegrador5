@@ -160,18 +160,17 @@ header {
 
 
 .nav .titulo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 5px 10px;
+}
+
+.pedido .infoPedido{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .nav .titulo img{
     width: 25px;
     height: 25px;
-}
-
-.conteudo{
-    width: 100%;
-    padding: 20px;
 }
