@@ -44,7 +44,7 @@ header {
 
 #logo a {
     text-decoration: none;
-    color: #FFA500;
+    color: #3B62E3;
     font-size: 1.3em;
 }
 
@@ -57,7 +57,7 @@ header {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #FFA500;
+    background-color: #3B62E3;
     bottom: -5px;
     left: 0;
     transform: scaleX(0);
@@ -147,7 +147,7 @@ header {
 
 .nav ul li:hover {
     background-color: #e3e7eb;
-    border-bottom:solid 1px #FFA500;
+    border-bottom:solid 1px #3B62E3;
 }
 
 .nav ul li a {
@@ -173,4 +173,83 @@ header {
 .nav .titulo img{
     width: 25px;
     height: 25px;
+}
+
+.acoesPedido button{
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: #3B62E3;
+    border: none;
+    border-radius: 10px;
+}
+
+.acoesPedido button:hover{
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: #9baade;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.acoesPedidoEntregue button{
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: #3AEA51;
+    border: none;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerNav {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        width: 100%;
+    }
+    
+    header {
+        padding: 0 15px;
+    }
+
+    #logo a {
+        font-size: 1.1em;
+    }
+
+    #detalhesSegundarios {
+        max-height: 40px;
+    }
+
+    #detalhesSegundarios .suporte,
+    #detalhesSegundarios .fotoPerfil {
+        width: 15vw;
+    }
+
+    #detalhesSegundarios .suporte img,
+    #detalhesSegundarios .fotoPerfil img {
+        max-width: 30px;
+    }
+
+    .nav ul li a {
+        padding: 15px;
+    }
+
+    .nav h3{
+        margin: 5px;
+    }
+
+    .containerNav {
+        max-width: 100%;
+    }
+
+    .nav {
+        border-right: none;
+        border-bottom: 1px solid #e3e7eb;
+        margin-bottom: 0;
+    }
 }

@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luan Food Delivery</title>
+    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="stylesheet" href="./assets/pedidos.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><span>LuanFood</span></a>
+        </div>
+
+        <div id="detalhesSegundarios">
+            <div class="suporte">
+                <img src="./assets/imagens/apoio-suporte.png" alt="iconeSuporte">
+                <a href="#">Suporte</a>
+            </div>
+            <div class="fotoPerfil">
+                <img src="./assets/imagens/imagem_perfilCaixa.jpg" alt="Perfil">
+                <span class="nomeUsuario">Caixa fulana</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="containerNav">
+            <div class="nav">
+                <ul>
+                    <div class="titulo">
+                        <img src="./assets/imagens/pedido-online.png" alt="iconePedidos">
+                        <h3>Entregas</h3>
+                    </div>       
+                    <li><a href="./index.html">Todas</a></li>
+                    <li><a href="./pendentes.html">Pedentes</a></li>
+                    <li><a href="./rota.html">Em rota</a></li>
+                    <li><a href="./entregues.html">Entregues</a></li>
+                    <div class="titulo">
+                        <img src="./assets/imagens/relatorio.png" alt="relatorioIcone">
+                        <h3>Relatorios</h3>
+                    </div>
+                    <li><a href="#">Financeiro</a></li>
+                    <li><a href="#">Total entregas</a></li>
+                    <li><a href="#">Media de tempo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <form id="filtroPedidos">
+                <label for="dataInicio">Data inicial:</label>
+                <input type="date" id="dataInicio" name="dataInicio">
+                <label for="dataFim">Data final:</label>
+                <input type="date" id="dataFim" name="dataFim">
+                <input type="submit" value="Filtrar">
+            </form>
+            <div class="pedidosFiltrados">
+                <div class="pedido">
+                    <div class="infoPedido">
+                        <span><strong>Nome: </strong>João</span>
+                        <span><strong>Endereço: </strong>Rua A, 123</span>
+                        <span><strong>Status:</strong> Em rota</span>
+                        <span><strong>Entregador: </strong>Samuel</span>
+                    </div>
+                    <div class="acoesPedido">
+                        <button>Finalizar</button>
+                    </div>
+                </div>
+
+                <div class="pedido">
+                    <div class="infoPedido">
+                        <span><strong>Nome: </strong>João</span>
+                        <span><strong>Endereço: </strong>Rua A, 123</span>
+                        <span><strong>Status:</strong> Em rota</span>
+                        <span><strong>Entregador: </strong>Samuel</span>
+                    </div>
+                    <div class="acoesPedido">
+                        <button>Finalizar</button>
+                    </div>
+                </div>        
+        </div>
+    </div>
+</body>
+</html>

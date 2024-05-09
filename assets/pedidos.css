@@ -25,3 +25,23 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 940px) {
+    .conteudo {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .pedido {
+        width: 100%;
+        height: auto;
+    }
+
+    .pedido span {
+        display: inline;
+    }
+
+    .pedidosFiltrados {
+        flex-direction: column;
+    }
+}
